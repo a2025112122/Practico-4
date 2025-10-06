@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (){
+int num,resto,sum= 0;
+
+printf("Ingrese un numero entero:");
+scanf("%d",&num);
+
+num = abs(num);
+while(num>0){
+
+    resto=num%10;
+    if(resto%2==0){
+       sum= sum+resto;
+    }
+
+    num= num/ 10;
+}
+printf("La suma de los digitos es: %d\n",sum);
+
+return 0;
+}
