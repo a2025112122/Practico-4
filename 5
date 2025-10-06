@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (){
+int num,digito, comp, resultado=0, factor=1;
+
+printf("Ingrese un numero entero:");
+scanf("%d",&num);
+
+do{
+        digito=num%10;
+        comp=9-digito;
+        resultado= comp*factor+resultado;
+        factor*=10;
+        num/=10;
+}
+
+while(num>0);
+printf("el complemento de 9 es: %d\n",resultado);
+return 0;
+
+}
