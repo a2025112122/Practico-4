@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (){
+int num,resto,inv= 0,A;
+
+printf("Ingrese un numero entero:");
+scanf("%d",&num);
+A=num;
+num = abs(num);
+while(num>0){
+
+    resto=num%10;
+    inv= inv*10+resto;
+    num= num/ 10;
+    
+}
+if(inv==A){
+    printf("es un numero capicua");}
+else{
+    printf("no es un numero capicua");}
+
+
+return 0;
