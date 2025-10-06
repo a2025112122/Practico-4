@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (){
+int num,digito, comp, resultado=0, factor=1;
+
+printf("Ingrese un numero entero:");
+scanf("%d",&num);
+
+do{
+        digito=num%10;
+        comp=8-digito;
+        resultado= comp*factor+resultado;
+        factor*=10;
+        num/=10;
+}
+
+while(num>0);
+if (resultado>0)
+{printf("el complemento de 8 es: %d\n",resultado);
+
+}
+else{printf("el complemento no es compatible a 8: %d\n",resultado);}
+
+return 0;
+
+}
